@@ -33,5 +33,11 @@ namespace OracleEntityF
         public virtual EMPLOYE EMPLOYE2 { get; set; }
         public virtual PROJET PROJET { get; set; }
         public virtual ICollection<INSCRIT> INSCRITs { get; set; }
+
+        public override string ToString()
+        {
+            return NUMEMP + " - " + NOMEMP + " - " + POSTE + " - " + SALAIRE + " - " + ((PRIME == null) ? 0 : PRIME) + " + " + ((CODEPROJET == null) ? "NULL" : CODEPROJET) + " - " + SUPERIEUR==null ?  "NULL";
+                
+        }
     }
 }

@@ -72,7 +72,7 @@ namespace OracleEntityF
                     var lesDates = requeteDate.ToList();
                     foreach (var uneDate in lesDates)
                     {
-                        Console.WriteLine + "         " + uneDate.DATEDEBUTSEM);
+                        Console.WriteLine("               " + uneDate.DATEDEBUTSEM);
                     }
                 }
 
